@@ -1,0 +1,467 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./main.css" />
+    <title>DevJoao-PORTFÓLIO</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="site-nav" aria-label="Navegação principal">
+        <!-- Desktop links (visíveis em tablet/desktop) -->
+        <div class="nav-links" id="desktopNavLinks">
+          <a class="nav-link" href="#home">Home</a>
+          <a class="nav-link" href="#skills">Skills</a>
+          <a class="nav-link" href="#about">About me</a>
+          <a class="nav-link" href="#projects">Projects</a>
+          <a class="nav-link" href="#contact">Contact</a>
+        </div>
+
+        <!-- Botão hambúrguer (visível apenas no mobile) -->
+        <button
+          class="hamburger"
+          id="hamburgerBtn"
+          aria-label="Abrir menu"
+          aria-expanded="false"
+          aria-controls="mobileMenu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </header>
+
+    <!-- Menu mobile overlay -->
+    <nav
+      class="mobile-menu"
+      id="mobileMenu"
+      aria-label="Menu de navegação mobile"
+    >
+      <button
+        class="mobile-menu-close"
+        id="mobileMenuClose"
+        aria-label="Fechar menu"
+      >
+        ✕
+      </button>
+      <div class="mobile-menu-links" id="mobileMenuLinks"></div>
+    </nav>
+
+    <section id="home" class="Home">
+      <div>
+        <h1>
+          Hi, it's<strong> João</strong><br />I'm a
+          <strong>Software engineer </strong>
+        </h1>
+        <p>
+          Turning ideas into digital products — from design to code, from
+          concept to delivery.
+        </p>
+        <a
+          class="home-button home-button-primary"
+          href="./assets/cv/Joao_Vitor_Guidoti_CV.pdf"
+          download
+          aria-label="Baixar currículo em PDF"
+        >
+           Baixar CV
+        </a>
+        <a
+          class="home-button home-button-secondary"
+          href="https://github.com/DevJoao-G"
+          target="_blank"
+          rel="noopener noreferrer"
+          >GitHub</a
+        >
+        <a
+          class="home-button home-button-secondary"
+          href="https://www.linkedin.com/in/devjoaog"
+          target="_blank"
+          rel="noopener noreferrer"
+          >LinkedIn</a
+        >
+      </div>
+    </section>
+
+    <section id="skills" class="skills-section">
+      <div class="carousel">
+        <div class="carousel-card">
+          <p class="carousel-card-image">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+              alt="HTML5"
+              width="24"
+              height="24"
+            />
+          </p>
+        </div>
+        <div class="carousel-card">
+          <p class="carousel-card-image">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+              alt="CSS3"
+              width="24"
+              height="24"
+            />
+          </p>
+        </div>
+        <div class="carousel-card">
+          <p class="carousel-card-image">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+              alt="Bootstrap"
+              width="24"
+              height="24"
+            />
+          </p>
+        </div>
+        <div class="carousel-card">
+          <p class="carousel-card-image">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+              alt="JavaScript"
+              width="24"
+              height="24"
+            />
+          </p>
+        </div>
+        <div class="carousel-card">
+          <p class="carousel-card-image">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+              alt="React"
+              width="24"
+              height="24"
+            />
+          </p>
+        </div>
+        <div class="carousel-card">
+          <p class="carousel-card-image">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
+              alt="PHP"
+              width="24"
+              height="24"
+            />
+          </p>
+        </div>
+        <div class="carousel-card">
+          <p class="carousel-card-image">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg"
+              alt="Laravel"
+              width="24"
+              height="24"
+            />
+          </p>
+        </div>
+        <div class="carousel-card">
+          <p class="carousel-card-image">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+              alt="SQL"
+              width="24"
+              height="24"
+            />
+          </p>
+        </div>
+        <div class="carousel-card">
+          <p class="carousel-card-image">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
+              alt="Figma"
+              width="24"
+              height="24"
+            />
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about-me">
+      <div class="img">
+        <img src="./assets/images/DevJoaoG.png" alt="DevJoaoG Animado" />
+      </div>
+      <div>
+        <h1>About me</h1>
+        <p>
+          I'm a 21-year-old software developer passionate about building modern,
+          functional web experiences. I hold a degree in Systems Analysis and
+          Development from Estácio and I'm currently pursuing a Post-Graduate
+          degree in Full Stack Development — always pushing forward and
+          deepening my knowledge of the technologies shaping the digital future.
+          I work with HTML, CSS, JavaScript, React, PHP, and Laravel, building
+          projects from scratch with a focus on clean code, solid design, and
+          great user experience. I'm open to remote opportunities and ready to
+          collaborate on challenging projects that make a real impact.
+        </p>
+      </div>
+    </section>
+
+    <section id="projects" class="projects">
+      <h1>My Projects</h1>
+
+      <div class="list-card-project">
+        <div class="card-project">
+          <div class="project">
+            <img
+              src="./assets/projects/E-commerce _ KiTenis.png"
+              alt="KiTenis E-commerce"
+            />
+            <p>KiTenis | E-commerce</p>
+            <a
+              class="project-button"
+              href="https://github.com/DevJoao-G/KiTenis"
+              >View project</a
+            >
+          </div>
+        </div>
+
+        <div class="card-project">
+          <div class="project">
+            <img src="./assets/projects/Saas _ KiCorte.png" alt="KiCorte" />
+            <p>KiCorte | SaaS para barbearias</p>
+            <a class="project-button" href="#">View project</a>
+          </div>
+        </div>
+
+        <div class="card-project">
+          <div class="project">
+            <img
+              src="./assets/projects/Loja Virtual _ Meteora.png"
+              alt="Loja Meteora"
+            />
+            <p>Loja Meteora | Alura</p>
+            <a
+              class="project-button"
+              href="https://devjoao-g.github.io/Alura-Meteora/"
+              >View project</a
+            >
+          </div>
+        </div>
+
+        <div class="card-project">
+          <div class="project">
+            <img
+              src="./assets/projects/Estante Virtual _ Alura.png"
+              alt="AluraBooks-Estante Virtual"
+            />
+            <p>Estante virtual de Livros | Alura</p>
+            <a
+              class="project-button"
+              href="https://devjoao-g.github.io/Alura-Metodos-DE-array/"
+              >View project</a
+            >
+          </div>
+        </div>
+
+        <div class="card-project">
+          <div class="project">
+            <img
+              src="./assets/projects/To-Do List _ Alura.png"
+              alt="ToDo-List"
+            />
+            <p>ToDo-List | Alura</p>
+            <a
+              class="project-button"
+              href="https://devjoao-g.github.io/Alura-ToDoList/"
+              >View project</a
+            >
+          </div>
+        </div>
+
+        <div class="card-project">
+          <div class="project">
+            <img
+              src="./assets/projects/Portfolio _ Alura.png"
+              alt="Portfolio"
+            />
+            <p>Portfólio Pessoal | Alura</p>
+            <a
+              class="project-button"
+              href="https://devjoao-g.github.io/Alura-HTML-CSS-Portfolio/"
+              >View project</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="contact"
+      aria-labelledby="contact-title"
+      class="contact-section"
+    >
+      <div class="contact-container">
+        <header class="contact-header">
+          <h2 id="contact-title">Let's work together</h2>
+          <p>
+            Have a project in mind, a role to fill, or just want to say hi? Send
+            me a message and I'll get back to you as soon as possible.
+          </p>
+        </header>
+
+        <div class="contact-content">
+          <form class="contact-form" action="#" method="post" autocomplete="on">
+            <div class="field">
+              <label for="name">Name</label>
+              <input
+                id="name"
+                name="name"
+                type="text"
+                placeholder="Your name"
+                required
+              />
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                placeholder="you@example.com"
+                required
+              />
+            </div>
+            <div class="field">
+              <label for="subject">Subject</label>
+              <input
+                id="subject"
+                name="subject"
+                type="text"
+                placeholder="What is this about?"
+              />
+            </div>
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="6"
+                placeholder="Tell me about your project..."
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="contact-submit">Send message</button>
+          </form>
+
+          <aside class="contact-aside" aria-label="Contact details">
+            <div class="contact-card">
+              <h3>Contact</h3>
+              <p>
+                Prefer email? Reach me at
+                <a href="mailto:devjoaog@outlook.com">devjoaog@outlook.com</a>.
+              </p>
+              <p>
+                Based in <span>Brazil</span> — open to remote opportunities.
+              </p>
+            </div>
+            <div class="contact-card">
+              <h3>Social</h3>
+              <ul class="contact-links">
+                <li>
+                  <a
+                    href="https://linkedin.com/in/devjoaog"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >LinkedIn</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://github.com/DevJoao-G"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >GitHub</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://instagram.com/joao.dev__"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Instagram</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer" role="contentinfo">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <a href="#top" class="footer-logo" aria-label="Back to top">
+            <span class="footer-name">João Vitor Guidoti</span>
+          </a>
+          <p class="footer-tagline">
+            Front-end Developer • Building clean, fast, accessible web
+            experiences.
+          </p>
+        </div>
+
+        <nav class="footer-nav" aria-label="Footer">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="footer-contact">
+          <h2 class="footer-title">Let's talk</h2>
+          <ul class="footer-links">
+            <li>
+              <a href="mailto:devjoaog@outlook.com" rel="noopener"
+                >devjoaog@outlook.com</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/devjoaog"
+                target="_blank"
+                rel="noopener noreferrer"
+                >LinkedIn</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://github.com/DevJoao-G"
+                target="_blank"
+                rel="noopener noreferrer"
+                >GitHub</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://wa.me/55219793824423"
+                target="_blank"
+                rel="noopener noreferrer"
+                >WhatsApp</a
+              >
+            </li>
+          </ul>
+          <div class="footer-cta">
+            <a
+              class="footer-btn"
+              href="mailto:devjoaog@outlook.com?subject=Let%27s%20work%20together"
+              >Hire me</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <small
+          >© <span id="year"></span> João Vitor Guidoti. All rights
+          reserved.</small
+        >
+      </div>
+    </footer>
+
+    <script src="./main.js"></script>
+  </body>
+</html>

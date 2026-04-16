@@ -1,0 +1,103 @@
+/* ============================================
+   DevJoão Portfolio — Dark Red Gradient Theme
+   Mobile-First Refactor
+   ============================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,600;1,300&display=swap');
+@import url('./styles/header.css');
+@import url('./styles/home.css');
+@import url('./styles/skills.css');
+@import url('./styles/about.css');
+@import url('./styles/projects.css');
+@import url('./styles/contact.css');
+@import url('./styles/footer.css');
+@import url('./styles/.css');
+/* ── Variables ── */
+:root {
+  --black: #080808;
+  --black-mid: #111111;
+  --black-card: #161616;
+  --red-deep: #8b0000;
+  --red-core: #c0392b;
+  --red-bright: #e74c3c;
+  --red-glow: #ff4d3d;
+  --red-light: #ff6b5b;
+  --white: #f5f0ef;
+  --muted: #9e8e8e;
+  --border: rgba(200, 50, 30, 0.18);
+
+  --grad-fire: linear-gradient(135deg, #8b0000 0%, #c0392b 45%, #e74c3c 100%);
+  --grad-dark: linear-gradient(160deg, #1a0505 0%, #0d0000 60%, #080808 100%);
+  --grad-text: linear-gradient(90deg, #ff6b5b, #e74c3c, #8b0000);
+
+  --font-display: 'Bebas Neue', sans-serif;
+  --font-body: 'DM Sans', sans-serif;
+
+  --radius: 4px;
+  --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ── Reset & Base ── */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  background-color: var(--black);
+  background-image:
+    radial-gradient(ellipse 80% 50% at 50% -20%, rgba(139, 0, 0, 0.35) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 40% at 80% 80%, rgba(100, 0, 0, 0.2) 0%, transparent 55%);
+  color: var(--white);
+  font-family: var(--font-body);
+  font-weight: 300;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Noise texture overlay */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 999;
+  opacity: 0.4;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--black);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--grad-fire);
+  border-radius: 10px;
+}

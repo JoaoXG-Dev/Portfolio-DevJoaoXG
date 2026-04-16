@@ -1,0 +1,109 @@
+/* ══════════════════════════════
+   HOME SECTION
+══════════════════════════════ */
+.Home {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 100px 5% 80px;
+  position: relative;
+}
+
+.Home::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 42%;
+  height: 100%;
+  background: linear-gradient(160deg, rgba(139, 0, 0, 0.08) 0%, transparent 70%);
+  clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);
+  pointer-events: none;
+}
+
+.Home::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--red-core), transparent);
+}
+
+.Home div {
+  max-width: 680px;
+  animation: fadeUp 0.9s ease both;
+}
+
+.Home h1 {
+  font-family: var(--font-display);
+  font-size: clamp(3.2rem, 8vw, 7rem);
+  line-height: 0.95;
+  letter-spacing: 0.02em;
+  color: var(--white);
+  margin-bottom: 1.4rem;
+}
+
+.Home h1 strong {
+  background: var(--grad-text);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.Home p {
+  font-size: 1.05rem;
+  color: var(--muted);
+  max-width: 460px;
+  margin-bottom: 2.5rem;
+  line-height: 1.7;
+}
+
+.Home div > a {
+  display: inline-block;
+}
+
+.home-button {
+  margin-right: 0.75rem;
+  margin-bottom: 0.75rem;
+  padding: 0.65rem 1.6rem;
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: var(--radius);
+  transition: all var(--transition);
+  border: none;
+}
+
+.home-button-primary {
+  background: var(--grad-fire);
+  color: #fff;
+  box-shadow: 0 0 28px rgba(231, 76, 60, 0.4);
+}
+
+.home-button-primary:hover {
+  box-shadow: 0 0 45px rgba(231, 76, 60, 0.7);
+  transform: translateY(-2px);
+}
+
+.home-button-secondary {
+  background: transparent;
+  color: var(--white);
+  border: 1px solid var(--border);
+}
+
+.home-button-secondary:hover {
+  border-color: var(--red-core);
+  color: var(--red-light);
+  background: rgba(139, 0, 0, 0.1);
+}
+
+@media (min-width: 600px) {
+  .Home {
+    padding-top: 120px;
+  }
+}
